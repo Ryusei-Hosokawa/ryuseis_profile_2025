@@ -1,28 +1,38 @@
 {
-  "name": "ryuseis-profile-2025-cd-ryuseis-profile-2025",
+  "name": "ryuseis_profile_2025",
+  "homepage": "https://ryusei-hosokawa.github.io/ryuseis_profile_2025",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "react-router dev",
     "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@react-router/fs-routes": "^7.1.1",
     "@react-router/node": "^7.1.1",
     "@react-router/serve": "^7.1.1",
+    "gh-pages": "^6.3.0",
+    "gray-matter": "^4.0.3",
     "isbot": "^5.1.17",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.1"
+    "react-markdown": "^9.0.3",
+    "react-router": "^7.1.1",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@react-router/dev": "^7.1.1",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.1",
     "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
+    "daisyui": "^4.12.23",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",

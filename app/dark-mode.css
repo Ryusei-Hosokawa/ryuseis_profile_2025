@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+:root {
+    --baseColor: #f2ebde;
+    --mainColor: #7c8c5a;
+    --textColor1: #48453c;
+    --textColor2: #f2ebde;
+    --accentColor: #e97a23;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --baseColor: #48453c;
+        --mainColor: #778952;
+        --textColor1: #f2ebde;
+        --textColor2: #48453c;
+        --accentColor: #DA7423;
+    }
+}

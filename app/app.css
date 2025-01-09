@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('PoiretOne-Regular.woff2') format('woff2'),
+      url('PoiretOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url('Raleway-Regular.woff2') format('woff2'),
+      url('Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ZenOldMinchoMedium';
+  src: url('ZenOldMincho-Medium.woff2') format('woff2'),
+      url('ZenOldMincho-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ZenOldMinchoRegular';
+  src: url('ZenOldMincho-Regular.woff2') format('woff2'),
+      url('ZenOldMincho-Regular.ttf') format('truetype');
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+:where(html) {
+    overscroll-behavior: scroll;
+    -webkit-overscroll-behavior: scroll;
+}
+
+:where(body) {
+    font-family: "RalewayRegular";
+    background-color: var(--baseColor);
+}
+
+* {
+  transition: all 0.25s ease-in-out;
+}
+
+.PoiretOne {
+    font-family: 'PoiretOne';
+}
+.ZenOldMinchoRegular {
+    font-family: 'ZenOldMinchoRegular';
+}
+.ZenOldMinchoMedium {
+    font-family: 'ZenOldMinchoMedium';
 }

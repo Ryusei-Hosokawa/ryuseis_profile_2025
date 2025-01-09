@@ -11,5 +11,5 @@ export default defineConfig({
     },
   },
   plugins: [reactRouter(), tsconfigPaths()],
-  base: "/ryuseis_profile_2025",
+  base: "/",
 });
